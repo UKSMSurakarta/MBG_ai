@@ -215,9 +215,9 @@ class _ProfilGuruScreenState extends State<ProfilGuruScreen> {
                       const SizedBox(height: 32),
 
                       // --- 4. TOMBOL LOGOUT ---
-                      SizedBox(
+                      Container(
                         width: double.infinity,
-                        height: 56,
+                        constraints: const BoxConstraints(minHeight: 56),
                         child: TextButton.icon(
                           onPressed: () {
                             // Arahkan kembali ke halaman login global
@@ -373,9 +373,9 @@ class _EditProfilScreenState extends State<EditProfilScreen> {
             _buildGlassInput(label: 'Alamat Email', controller: _emailController, icon: Icons.email_outlined, keyboardType: TextInputType.emailAddress),
             
             const SizedBox(height: 40),
-            SizedBox(
+            Container(
               width: double.infinity,
-              height: 56,
+              constraints: const BoxConstraints(minHeight: 56),
               child: ElevatedButton(
                 onPressed: () {
                   Navigator.pop(context);
@@ -457,9 +457,9 @@ class _UbahPasswordScreenState extends State<UbahPasswordScreen> {
             _buildPasswordInput(label: 'Password Baru', isObscured: _obscureNew, onToggle: () => setState(() => _obscureNew = !_obscureNew)),
             
             const SizedBox(height: 40),
-            SizedBox(
+            Container(
               width: double.infinity,
-              height: 56,
+              constraints: const BoxConstraints(minHeight: 56),
               child: ElevatedButton(
                 onPressed: () {
                   Navigator.pop(context);

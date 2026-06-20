@@ -122,7 +122,7 @@ class _ManajemenMenuAiViewState extends State<ManajemenMenuAiView> {
                     const Text('Manajemen Menu & AI', style: TextStyle(fontSize: 22, fontWeight: FontWeight.w900, color: Color(0xFF0F172A), letterSpacing: -0.5)),
                     const SizedBox(height: 20),
                     Container(
-                      height: 52,
+                      constraints: const BoxConstraints(minHeight: 52),
                       padding: const EdgeInsets.all(4),
                       decoration: BoxDecoration(color: const Color(0xFFE2E8F0).withOpacity(0.5), borderRadius: BorderRadius.circular(26)),
                       child: Row(

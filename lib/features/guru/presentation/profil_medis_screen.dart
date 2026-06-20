@@ -176,7 +176,7 @@ class _ProfilMedisClassScreenState extends State<ProfilMedisClassScreen> {
                     children: [
                       // --- SLIDING TOGGLE CONTROL ---
                       Container(
-                        height: 52,
+                        constraints: const BoxConstraints(minHeight: 52),
                         padding: const EdgeInsets.all(4),
                         decoration: BoxDecoration(
                           color: const Color(0xFFE2E8F0).withOpacity(0.5),

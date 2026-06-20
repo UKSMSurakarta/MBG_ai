@@ -115,9 +115,9 @@ class _LiveTrackingGuruScreenState extends State<LiveTrackingGuruScreen> {
                 Text('ID: ${trackData['order_id']}', style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w800, color: Color(0xFF0F172A))),
                 
                 const SizedBox(height: 40),
-                SizedBox(
+                Container(
                   width: double.infinity,
-                  height: 56,
+                  constraints: const BoxConstraints(minHeight: 56),
                   child: TextButton(
                     onPressed: () => Navigator.pop(context),
                     style: TextButton.styleFrom(
@@ -245,9 +245,9 @@ class _LiveTrackingGuruScreenState extends State<LiveTrackingGuruScreen> {
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
       floatingActionButton: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 24.0),
-        child: SizedBox(
+        child: Container(
           width: double.infinity,
-          height: 56,
+          constraints: const BoxConstraints(minHeight: 56),
           child: ElevatedButton.icon(
             onPressed: _showQRCodeModal,
             icon: const Icon(Icons.qr_code_scanner_rounded, color: Colors.white),

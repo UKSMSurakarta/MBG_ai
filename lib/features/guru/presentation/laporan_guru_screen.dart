@@ -294,9 +294,9 @@ class _LaporanGuruScreenState extends State<LaporanGuruScreen> {
           const SizedBox(height: 40),
           
           // Tombol Kirim
-          SizedBox(
+          Container(
             width: double.infinity,
-            height: 56,
+            constraints: const BoxConstraints(minHeight: 56),
             child: ElevatedButton.icon(
               onPressed: _submitReport,
               icon: const Icon(Icons.send_rounded, color: Colors.white, size: 20),
